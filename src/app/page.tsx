@@ -1,101 +1,128 @@
-import Image from "next/image";
-
+import { BannerSwiper } from "@/components/banner/banner-swiper";
+import { BodyContent } from "@/layout/BodyContent";
+import { PublicLayout } from "@/layout/PublicLayout";
+import "./home.css";
+import diamond from "@/assets/diamond.svg";
+import gift from "@/assets/gift.svg";
+import delivery from "@/assets/delivery.svg";
+import returnIcon from "@/assets/return.svg";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <PublicLayout>
+      <BannerSwiper></BannerSwiper>
+      <BodyContent className="">
+        <div className="flex flex-wrap flex-row grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-2 home-card-bg">
+          <div className="home-card flex flex-row">
+            <img src={diamond.src} alt="" />
+            <div className="flex flex-col pl-3">
+              <div className="heading">Great Value</div>
+              <div className="sub-title">
+                We offer competitive prices for over 1000 products
+              </div>
+            </div>
+          </div>
+          <div className="home-card flex flex-row">
+            <img src={delivery.src} alt="" />
+            <div className="flex flex-col pl-3">
+              <div className="heading">Free Delivery</div>
+              <div className="sub-title">
+                Free shipping on products over 300 SAR
+              </div>
+            </div>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <div className="home-card flex flex-row">
+            <img src={gift.src} alt="" />
+            <div className="flex flex-col pl-3">
+              <div className="heading">Shop with confidence</div>
+              <div className="sub-title">
+                Professional service and product warranty
+              </div>
+            </div>
+          </div>
+          <div className="home-card flex flex-row">
+            <img src={returnIcon.src} alt="" />
+            <div className="flex flex-col pl-3">
+              <div className="heading">Easy to return or exchange</div>
+              <div className="sub-title">Simply don't worry, return policy</div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="flex flex-wrap flex-row grid grid-cols-4 gap-3 mt-4 ">
+          <div className="col-span-2">
+            <img
+              className="w-full "
+              style={{
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "10px",
+              }}
+              src="https://i.pinimg.com/736x/93/7f/e0/937fe049bc0ac36bdc8e4f90260e56d7.jpg"
+              alt=""
+            />
+          </div>
+          <div className="col-span-1">
+            <img
+              className="w-full "
+              style={{
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "10px",
+              }}
+              src="https://i.pinimg.com/736x/62/c5/e2/62c5e2c1214e70538f0cee36af678719.jpg"
+              alt=""
+            />
+          </div>
+          <div className="col-span-1">
+            <img
+              className="w-full "
+              style={{
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "10px",
+              }}
+              src="https://i.pinimg.com/736x/3b/05/dd/3b05ddb1377326771793f2e1cefee8e5.jpg"
+              alt=""
+            />
+          </div>
+          <div className="col-span-1">
+            <img
+              className="w-full "
+              style={{
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "10px",
+              }}
+              src="https://i.pinimg.com/736x/fe/e3/53/fee353f1bc89167177b2ae64f3d9b19a.jpg"
+              alt=""
+            />
+          </div>
+          <div className="col-span-1">
+            <img
+              className="w-full "
+              style={{
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "10px",
+              }}
+              src="https://i.pinimg.com/736x/7d/bf/86/7dbf86ba0a528edb478a4e03438ece95.jpg"
+              alt=""
+            />
+          </div>
+          <div className="col-span-2">
+            <img
+              className="w-full "
+              style={{
+                height: "200px",
+                objectFit: "cover",
+                borderRadius: "10px",
+              }}
+              src="https://i.pinimg.com/originals/86/28/a1/8628a134dfd0fdf76388616aba3b0f07.gif"
+              alt=""
+            />
+          </div>
+        </div>
+      </BodyContent>
+    </PublicLayout>
   );
 }
