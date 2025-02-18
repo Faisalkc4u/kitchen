@@ -17,7 +17,7 @@ export default function Home() {
       <BodyContent className="">
         <div className="flex flex-wrap flex-row grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-2 home-card-bg">
           <div className="home-card flex flex-row">
-            <img src={diamond.src} alt="" />
+            <Image width={40} height={40} src={diamond.src} alt="" />
             <div className="flex flex-col pl-3">
               <div className="heading">Great Value</div>
               <div className="sub-title">
@@ -26,7 +26,7 @@ export default function Home() {
             </div>
           </div>
           <div className="home-card flex flex-row">
-            <img src={delivery.src} alt="" />
+            <Image width={40} height={40} src={delivery.src} alt="" />
             <div className="flex flex-col pl-3">
               <div className="heading">Free Delivery</div>
               <div className="sub-title">
@@ -36,7 +36,7 @@ export default function Home() {
           </div>
 
           <div className="home-card flex flex-row">
-            <img src={gift.src} alt="" />
+            <Image width={40} height={40} src={gift.src} alt="" />
             <div className="flex flex-col pl-3">
               <div className="heading">Shop with confidence</div>
               <div className="sub-title">
@@ -45,10 +45,12 @@ export default function Home() {
             </div>
           </div>
           <div className="home-card flex flex-row">
-            <img src={returnIcon.src} alt="" />
+            <Image width={40} height={40} src={returnIcon.src} alt="" />
             <div className="flex flex-col pl-3">
               <div className="heading">Easy to return or exchange</div>
-              <div className="sub-title">Simply don't worry, return policy</div>
+              <div className="sub-title">
+                Simply don&#39;t worry, return policy
+              </div>
             </div>
           </div>
         </div>
