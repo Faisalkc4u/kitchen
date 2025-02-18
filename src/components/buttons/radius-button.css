@@ -1,0 +1,8 @@
+.radius-button {
+    background-color: var(--primary);
+    border-radius: 13px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: var(--background);
+    text-align: center;
+}

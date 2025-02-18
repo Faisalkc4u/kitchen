@@ -5,10 +5,5 @@ interface PublicLayoutProps {
 }
 
 export const PublicLayout = ({ children }: PublicLayoutProps) => {
-  return (
-    <div>
-      <div>layout</div>
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 };

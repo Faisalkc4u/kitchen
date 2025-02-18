@@ -6,6 +6,10 @@ import diamond from "@/assets/diamond.svg";
 import gift from "@/assets/gift.svg";
 import delivery from "@/assets/delivery.svg";
 import returnIcon from "@/assets/return.svg";
+import RadiusButton from "@/components/buttons/radius-button";
+import Image from "next/image";
+import ProductCard from "@/components/product/product-card";
+
 export default function Home() {
   return (
     <PublicLayout>
@@ -120,6 +124,26 @@ export default function Home() {
               src="https://i.pinimg.com/originals/86/28/a1/8628a134dfd0fdf76388616aba3b0f07.gif"
               alt=""
             />
+          </div>
+        </div>
+        <div className="flex justify-center">
+          <RadiusButton>
+            <p className="pl-5 pr-5">Discover more</p>
+          </RadiusButton>
+        </div>
+        <div className="flex justify-center">
+          <h1 className="font-medium">Shop by Brand</h1>
+        </div>
+        <div>section for Brands</div>
+
+        <div className="flex">
+          <h1 className="font-medium">New Arrivals</h1>
+        </div>
+        <div>
+          <div className="flex flex-wrap  ">
+            <ProductCard></ProductCard>
+            <ProductCard></ProductCard>
+            <ProductCard></ProductCard>
           </div>
         </div>
       </BodyContent>
