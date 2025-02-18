@@ -8,6 +8,7 @@ import delivery from "@/assets/delivery.svg";
 import returnIcon from "@/assets/return.svg";
 import RadiusButton from "@/components/buttons/radius-button";
 import ProductCard from "@/components/product/product-card";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -53,7 +54,9 @@ export default function Home() {
         </div>
         <div className="flex flex-wrap flex-row grid grid-cols-4 gap-3 mt-4 ">
           <div className="col-span-2">
-            <img
+            <Image
+              width={0}
+              height={0}
               className="w-full "
               style={{
                 height: "200px",
@@ -65,7 +68,9 @@ export default function Home() {
             />
           </div>
           <div className="col-span-1">
-            <img
+            <Image
+              width={0}
+              height={0}
               className="w-full "
               style={{
                 height: "200px",
@@ -77,7 +82,9 @@ export default function Home() {
             />
           </div>
           <div className="col-span-1">
-            <img
+            <Image
+              width={0}
+              height={0}
               className="w-full "
               style={{
                 height: "200px",
@@ -89,7 +96,9 @@ export default function Home() {
             />
           </div>
           <div className="col-span-1">
-            <img
+            <Image
+              width={0}
+              height={0}
               className="w-full "
               style={{
                 height: "200px",
@@ -101,7 +110,9 @@ export default function Home() {
             />
           </div>
           <div className="col-span-1">
-            <img
+            <Image
+              width={0}
+              height={0}
               className="w-full "
               style={{
                 height: "200px",
@@ -113,7 +124,9 @@ export default function Home() {
             />
           </div>
           <div className="col-span-2">
-            <img
+            <Image
+              width={0}
+              height={0}
               className="w-full "
               style={{
                 height: "200px",

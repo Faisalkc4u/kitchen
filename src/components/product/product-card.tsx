@@ -22,7 +22,7 @@ export default function ProductCard() {
       <div className="product-card-body">
         <div className="product-span-card-title">Best Seller on KB</div>
         <div className="product-card-title">
-          Golden letters Dallah "1 liter letters Dallah" 1 liter
+          Golden letters Dallah 1 liter letters Dallah 1 liter
         </div>
         <div className="product-card-offer-info">Save 130 SAR (10%-)</div>
         <div className="product-card-price ">
