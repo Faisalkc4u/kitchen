@@ -7,7 +7,6 @@ import gift from "@/assets/gift.svg";
 import delivery from "@/assets/delivery.svg";
 import returnIcon from "@/assets/return.svg";
 import RadiusButton from "@/components/buttons/radius-button";
-import Image from "next/image";
 import ProductCard from "@/components/product/product-card";
 
 export default function Home() {
