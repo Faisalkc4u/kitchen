@@ -13,8 +13,8 @@ export default function ProductCard() {
             objectFit: "cover",
             borderRadius: "8px 8px 0 0",
           }}
-          width={0}
-          height={200}
+          width={900}
+          height={900}
           src="https://i.pinimg.com/736x/7d/bf/86/7dbf86ba0a528edb478a4e03438ece95.jpg"
           alt=""
         />

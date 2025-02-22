@@ -57,8 +57,8 @@ export default function Home() {
         <div className="flex flex-wrap flex-row grid grid-cols-4 gap-3 mt-4 ">
           <div className="col-span-2">
             <Image
-              width={0}
-              height={0}
+              width={900}
+              height={900}
               className="w-full "
               style={{
                 height: "200px",
@@ -71,8 +71,8 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <Image
-              width={0}
-              height={0}
+              width={900}
+              height={900}
               className="w-full "
               style={{
                 height: "200px",
@@ -85,8 +85,8 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <Image
-              width={0}
-              height={0}
+              width={900}
+              height={900}
               className="w-full "
               style={{
                 height: "200px",
@@ -99,8 +99,8 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <Image
-              width={0}
-              height={0}
+              width={900}
+              height={900}
               className="w-full "
               style={{
                 height: "200px",
@@ -113,8 +113,8 @@ export default function Home() {
           </div>
           <div className="col-span-1">
             <Image
-              width={0}
-              height={0}
+              width={900}
+              height={900}
               className="w-full "
               style={{
                 height: "200px",
@@ -127,8 +127,8 @@ export default function Home() {
           </div>
           <div className="col-span-2">
             <Image
-              width={0}
-              height={0}
+              width={900}
+              height={900}
               className="w-full "
               style={{
                 height: "200px",
